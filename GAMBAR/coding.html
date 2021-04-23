@@ -1,0 +1,390 @@
+<style>
+	::-webkit-scrollbar {
+    visibility:hidden;
+}
+html {
+    font-size:small;
+    font-family:helvetica, serif;
+}
+code.err
+{
+  color:red;
+  background:gray;
+}
+body {
+    background:#012d59;
+    position:relative;
+    -webkit-transition:-webkit-filter 0.75s ease-in-out;
+    -webkit-filter: blur(15px);
+}
+.grey {
+    -webkit-filter: blur(0px);
+}
+figcaption {
+    font-size:9pt;
+}
+</style>
+
+<div class="ui-widget ui-widget-content ui-corner-all">
+    <p class="ui-state-default ui-corner-all ui-helper-clearfix" style="padding:4px;margin:0.5px 0 3px;"> <span class="ui-icon ui-icon-help" style="float:left; margin:-2px 5px 0 0;"></span>
+Help</p>
+    <div class="tabs">
+        <ul>
+            <li><a href="#1">When first time</a>
+
+            </li>
+            <li><a href="#3">Basic Uses</a>
+
+            </li>
+            <li><a href="#2">Using all features</a>
+
+            </li>
+            <li><a href="#5">What's New</a>
+
+            </li>
+        </ul>
+        <div id="1">
+            <div class="accordion">
+                 <h3>Before start</h3>
+
+                <div>
+                    <p>Sebelum memulai, kami sarankan untuk membaca help ini terlebih dahulu, karena banyaknya perintah di blog kami.</p>
+                    <p>Saya berterima kasih terhadap jQuery UI yang bisa membuat tata help ini menjadi rapih, karena tanpanya
+                        <p>Ada beberapa kotak peringatan, contohnya seperti berikut:</p>
+                        <div class="ui-state-highlight ui-corner-all" style="padding: 0 .7em;">
+                            <p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+ <strong>Informasi:</strong> Informasi yang dimaksud di sini adalah tempat untuk menempatkan berbagai tambahan informasi. Jika Anda tidak tahu apakah itu atau sejenisnya, boleh ditengok yang satu ini</p>
+                        </div>
+                        <br/>
+                        <div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+                            <p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+ <strong>PERHATIAN:</strong> 'PERHATIAN' ADALAH INFORMASI YANG BERISI PERINTAH. PERINTAH INI HARUS DITURUTI, KARENA JIKA TIDAK AKAN BERAKIBAT FATAL PADA DIRI SENDIRI DAN ORANG LAIN. SELAIN ITU JUGA BERAKIBAT TERHADAP SISTEM BLOG, JQUERY, JAVASCRIPT, BROWSER, BAHKAN OS</p>
+                        </div>
+                </div>
+                 <h3>In loading</h3>
+
+                <div>
+                    <div style="text-align:center">
+                        <img src="http://upload.wikimedia.org/wikipedia/commons/b/b9/Chocolate_Chip_Cookies_-_kimberlykv.jpg" width="450" height="220" />
+                    </div>
+                    <p>Pada saat loading, Anda diminta untuk mengisi nama Anda. Keep calm saja, nama itu bersifat PRIVAT dan tidak akan dikirim ke pembuat blog dan disimpan sebagai cookie</p>
+                    <p>Kelebihannya, jika dengan cookie, nama yang sudah diketik tidak perlu diketik ulang lagi dan langsung tersimpan di dalam browser</p>
+                    <div style="text-align:center">
+                        <img src="http://lab.pipwerks.com/javascript/prompt/images/iePrompt_IE6.png" />
+                    </div>
+                </div>
+                 <h3>The parts</h3>
+
+                <div>
+                    <figure style="text-align:center">
+                        <img border="0" src="https://lh5.googleusercontent.com/-l82FQhheKsE/U5-nI58lHkI/AAAAAAAAB_A/76Liz088dRY/w702-h483-no/Blog+version+7.8.png" height="220" width="450" />
+                        <figcaption>Version 7.8 showed</figcaption>
+                    </figure>
+                    <p>Bagian atas terdapat toolbar. Di situ Anda bisa menjelajah. Sebenarnya, di bagian itu ada bagian yang tersembunyi, yaitu sebuah papan informasi untuk memberitahu informasi, alert, dan warning</p>
+                    <p>Klik bagian chat untuk membuka buku tamu</p>
+                    <p>Untuk membuka menu, geser posisi mouse ke sebelah kiri. Ada banyak pilihan untuk dipilih</p>
+                    <p>Di toolbar, ada 2 tombol anak panah yang bisa dibuka. Bagian kiri berisi 'perkakas' untuk mengakses beberapa fitur di blog kami, sedangkan di bagian kanan hanyalah untuk sebuah informasi</p>
+                    <p>Untuk membuka bagian-bagian tertentu melalui action overflow, klik kanan. Untuk mengetahui tentang action overflow, buka Basic Uses dan klik Action Overflow</p>
+                </div>
+                 <h3>In the menu section</h3>
+
+                <div>
+                    <div style="text-align:center">
+                        <img border="0" src="https://2.bp.blogspot.com/-13JUAcx6csk/UyxKeP1aL8I/AAAAAAAAB3c/LcBu5ykCn8E/s1600/Screenshot+(16).png" height="400" width="315" />
+                    </div>
+                    <p>Di menu, ada 3 pilihan, search, navigation, dan ads. Namun untuk ads masih sedikit dulu</p>
+                    <p>Bagian search adalah tempat untuk melakukan pencarian di blog ini</p>
+                    <p>Bagian navigation adalah home, FAQ, About this blog, Kode warna HTML untuk mengecek kode-kode warna dalam HTML, Disclaimer yang berisi tentang disclaimer blog kami, lalu ada link exchange untuk bertukar link</p>
+                    <p>Blog kami memang masih valid HTML 5, tetapi tidak semuanya. Untuk berlangganan RSS klik RSS saja</p>
+                </div>
+                 <h3>WARNING</h3>
+
+                <div>
+                    <div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+                        <p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+	<strong>PERHATIAN:</strong>
+
+                        </p>
+                        <ul>
+                            <li>Blog kami diproteksi oleh Anti Pl4g1at v3.5 yang sudah mensupport berbagai macam sistem operasi, mulai dari Windows, Linux, hingga Mac. Beberapa shortcut seperti CTRL+U, CTRL+SHIFT+I, COMMAND+OPTION+U, COMMAND+OPTION+I, dan sejenisnya telah kami matikan untuk mencegah plagiat. Untuk pesannya, kami tidak menggunakan kata-kata kasar, namun hanya pesan error 403 (Forbidden) yang kami ubah agar menyerupai kata-kata bahwa melihat source code itu forbidden</li>
+                            <li>Blog kami memang belum mempunyai fitur anti spam, namun administrator sangat membenci SPAM. Bagi yang membuat spam di blog kami, seluruh komentarnya akan kami hapus</li>
+                            <li>Anda tidak diperkenankan mematikan JavaScript. Mematikan JavaScript akan mengaktifkan tag <i>noscript</i> yang akan menutupi seluruh halaman blog</li>
+                            <li>Blog kami memang mempunyai Anti Klik Kanan, tapi tidak seperti pada blog kebanyakan yang menggunakan gambar, melainkan dengan action overflow. Menyalahgunakannya menjadi alat plagiat sangat tidak diperkenankan. Kami tidak terima dengan hal ini</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="2">
+            <div class="accordion">
+                 <h3>'Ganti warna background'</h3>
+
+                <div>
+                    <div style="text-align:center">
+                        <img border="0" src="https://1.bp.blogspot.com/-5mOnTXqmtD8/UyxKdhqcBNI/AAAAAAAAB3Y/IGzLvD7zcnI/s1600/Screenshot+(15).png" height="199" width="320" />
+                    </div>
+                    <p>Untuk mengganti warna background, Anda tak perlu khawatir karena pilihan warnanya sedikit. Di blog kami, pilihan warnanya sangat banyak tergantung Anda</p>
+                    <p>Caranya, geser ketiga slider tersebut. Slider pertama untuk mengatur warna merah, slider kedua untuk warna hijau, dan slider ketiga untuk warna biru. Kami akan terus mengembangkannya sehingga value dapat diatur dengan cara ketik dan geser slider</p>
+                    <p>Cara penggunaannya mirip dengan Anda menggunakan pengatur warna di Microsoft Office. Seperti Anda ketahui, di Microsoft Office juga menerapkan cara yang sama dan kemudian saya adopsi di blog kami</p>
+                    <p>Jika Anda ingin mereset warnanya ke settingan semula, tekan tombol reset. Khusus untuk hari-hari tertentu, background ini dapat diganti secara khusus hanya dengan menekan tombol paling kiri (Tergantung tanggal berapa). Untuk menutupnya, tekan tombol close</p>
+                </div>
+                 <h3>GeoLocation</h3>
+              <div>
+                Widget unavailable as part of pre-v8 update
+                </div>
+                 <h3>U-Ad Remover (Khusus pengguna atau mantan pengguna Speedy)</h3>
+
+                <div>
+                    <div style="text-align:center">
+                        <img src="http://www.teknologi.co/wp-content/uploads/2013/11/telkom-paksa-pelanggan-speedy-lihat-iklan-lewat-script-inject-cfs-u-ad-info.jpg" width="450" height="220" />
+                    </div>
+                    <p>Merasa terganggu dengan iklan yang diinject oleh telkom dan menutupi bagian atas dari halaman blog kami? Kami telah membuat tool yang bisa menghilangkan iklan ini</p>
+                    <p>Blog kami kalau bisa akan kami iklankan oleh layanan iklan Google AdWords dan tidak akan diiklankan oleh iklannya telkom yang dipasang secara inject, karena untuk memasang iklan, harus minta izin terhadap penggunanya</p>
+                    <p>Parahnya, iklan ini tidak ada tombol closenya seperti kamu melihat iklan sejenis dan melayang di beberapa website. Jadi bagaimana cara menghilangkan iklannya selain melalui Inspect Element? Kami pun menerapkan fungsi U-Ad Remover spesial untuk langganan TelkomSpeedy</p>
+                    <p>Blog kami memang sudah diterapkan fungsi "cfs.u-ad.info remover". Fungsi ini akan menghapus iklan secara otomatis pada saat halaman blog lagi diload. Dalam beberapa kasus, iklan memang masih tetap muncul karena pada saat keload, sistem javascript tidak mengenali adanya iklan. Jika ini masih terjadi, Anda bisa klik kanan, lalu klik remove ads. Kami akan mengembangkan teknologi ini agar iklan tidak muncul selamanya</p>
+                </div>
+                 <h3>HTML Code Conversion</h3>
+
+                <div>
+                    <div style="text-align:center">
+                        <img border="0" src="https://lh6.googleusercontent.com/-bkqsoz1b7Vc/U55f1SrceqI/AAAAAAAAB-c/xe_GFTcaesw/w702-h488-no/HTML+Conversion+Code.png" />
+                    </div>
+                    <p>Widget ini adalah widget yang berada di komentar. Terima kasih kepada <a href="https://googledrive.com/host/0B-GXzRKoPbNnUGZwTXlaTHlMQmM">halaman ini</a>
+
+                    </p>
+                    <p>Scriptnya saja yang kita ambil, sisanya kita pakai elemen jQuery UI aja.</p>
+                    <p>Cara penggunaan:</p>
+                    <ol>
+                        <li>Klik
+                            <button id="convert">HTML Conversion</button>. Tombolnya terletak di bagian atas kolom komentar:
+                            <img border="0" src="https://lh3.googleusercontent.com/-lJ0a51sgXbU/U55gYpV8SVI/AAAAAAAAB-s/TDUDmIKCDJo/w667-h325-no/HTML+Conversion.png" />
+                        </li>
+                        <li>Lalu akan muncul dialog HTML Conversion Code. Ketikkan kode kamu yang ingin dikonversikan</li>
+                        <li>Setelah mengeik kodenya, di bagian bawahnya terdapat opsi untuk mematikan atau menyalakan beberapa fitur konversi, misalnya mengubah &amp; menjadi &amp;amp;, dan sejenisnya. Anda bisa mematikan atau menyalakan sesuka kalian</li>
+                        <li>Setelah itu, klik konversi
+                            <div class="ui-state-highlight ui-corner-all" style="padding: 0 .7em;">
+                                <p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+ <strong>Informasi:</strong> Setelah klik konversi, kode itu tidak bisa diubah kembali. Untuk mengubah kode, silahkan klik tombol bersihkan. Tombol bersihkan akan menghapus seluruh field yang ada dan meresetnya ke kondisi default</p>
+                            </div>
+                        </li>
+                        <li>Setelah itu, salin kode tersebut ke kolom komentar. Caranya, tinggal copy, lalu klik bersihkan, lalu klik tombol tutup untuk menutup dialog. Setelah itu, salin ke kolom komentar
+                        <div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+                                <p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+ <strong>PERHATIAN:</strong> Tombol bersihkan akan menghapus seluruh field yang ada dan meresetnya ke kondisi default. Pastikan Anda mempunyai backupnya terlebih dahulu sebelum mengklik tombol bersihkan</p>
+                            </div></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="3">
+            <div class="accordion">
+                 <h3>Action overflow</h3>
+
+                <div>
+                    <div style="text-align:center">
+                        <img src="https://lh5.googleusercontent.com/-cY9l8KEU_oo/Uy0TSJYOVtI/AAAAAAAAB34/iC85rUNBrqI/w186-h425-no/Screenshot+%252818%2529.png" />
+                    </div>
+                    <p>Action overflow adalah tempat-tempat untuk bersemanyamnya beberapa pilihan. Anda bisa kembali ke beranda, melakukan pencarian, membookmark (browser tertentu saja), mengcopy (Tetap pakai ctrl+c atau command+c), Open Link in New Tab (Tetap pakai ctrl+click atau command+click), dan melakukan reload</p>
+                    <p>Selain itu, Anda bisa menyembunyikan kotak melayang, kembali ke atas atau menuju ke bawah, membuka buku tamu, backlink, print halaman, membuka kotak informasi, menghilangkan iklan, dan mengaktifkan energy saving mode</p>
+                    <p>Untuk mengaktifkannya, Anda bisa mengklik kanan di halaman manapun dan muncul kotak ini dari bawah halaman</p>
+                    <div class="ui-state-highlight ui-corner-all" style="padding: 0 .7em;">
+                        <p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+	<strong>Informasi:</strong> Mengklik kanan pada halaman blog atau menekan tombol menu (antara alt dan ctrl serta terletak di bagian kanan bawah keyboard) akan mengaktifkan fungsi Anti Klik Kanan dan action overflow</p>
+                    </div>
+                </div>
+                 <h3>Search</h3>
+
+                <div>
+                    <div style="text-align:center">
+                        <table style="border:0">
+                            <tr>
+                                <td>
+                                    <img src="https://lh4.googleusercontent.com/sSA9cM-ZM0JEuHRUsb7x8f27kK34ZPhAgF3kGjKD3EE=w318-h167-no" width="250" height="122" />
+                                </td>
+                                <td>
+                                    <img src=" https://lh5.googleusercontent.com/-cKu8XcG03Nc/Uy017F-aVnI/AAAAAAAAB4c/iyVl9dRkC7Q/w310-h118-no/Screenshot+%252820%2529.png" width="250" height="122" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <p>Jika Anda ingin untuk mencari sesuatu di blog kami, Anda bisa mencarinya melalui Action overflow atau dari navigation menu yang bisa diakses dengan menggeser cursor ke bagian kiri dari halaman ini</p>
+                    <p>Setelah muncul, ketik keyword yang Anda inginkan lalu tekan tombol enter. Maka keyword yang Anda cari langsung ditemukan</p>
+                </div>
+                 <h3>Fullscreen</h3>
+
+                <div>
+                    <div style="text-align:center">
+                        <img src="https://cdn1.iconfinder.com/data/icons/metro-ui-dock/512/Full_Screen.png" width="250" height="250" />
+                    </div>
+                    <p>Merasa terganggu oleh kotak melayang? Anda bisa mengaktifkan fungsi Full Screen pada blog. Caranya dengan menekan tombol F11 (FN+F11 untuk FN Terbalik atau pengguna Mac), Command+Control+F, atau Command+Shift+F (Pengguna Google Chrome di Mac), atau Anda bisa mengklik kanan -> Full Screen</p>
+                    <p>Dengan menekan keempat parameter di atas, semua elemen kotak melayang akan hilang kecuali buku tamu yang memang sengaja administrator diamkan agar Anda bisa melakukan chat terhadap admin</p>
+                    <div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+                        <p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+ <strong>PERHATIAN:</strong> Menekan tombol F11, Command+Ctrl+F, atau Command+Shift+F berkali-kali mungkin dapat menyebabkan malfungsi di sistem jQuery</p>
+                    </div>
+                </div>
+                 <h3>Guest Book</h3>
+
+                <div>
+                    <div style="text-align:center">
+                        <img src="https://lh5.googleusercontent.com/LvvgxWoGDGeuzHJpCHMoJ8wZY0uEo4eBDnj6Oa8AP1s=w261-h457-no" />
+                    </div>
+                    <p>Buku tamu adalah tempat para pengunjung blog untuk mengobrol. Anda bisa menyampaikan pesan Anda, kesan mengunjung blog ini, atau menyampaikan komentar jika komentar dikunci</p>
+                    <div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+                        <p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+ <strong>PERHATIAN:</strong> Untuk mencegah pengguna yang lain kesal dan menimbulkan konflik serta menimbulkan spam di buku tamu, kami sarankan untuk membaca tatacara menyampaikan pesan melalui link etika. Jika tatacara ini dilanggar, komentar mungkin akan dihapus dalam waktu beberapa hari saja</p>
+                    </div>
+                    <p>Untuk membuka buku tamu, Anda klik saja di tombol chat dan buku tamu pun keluar. Atau bisa juga klik kanan -> Buku Tamu, atau bisa juga melalui navigation menu -> GuestBook</p>
+                    <p>Isilah Nama Anda di bagian name. Kalau tidak mau isi nama, ketik sajalah Anonymous. Di bagian email/url, isilah url. Ketikkan pesanmu di message</p>
+                    <div class="ui-state-error ui-corner-all" style="padding: 0 .7em;">
+                        <p><span class="ui-icon ui-icon-alert" style="float: left; margin-right: .3em;"></span>
+ <strong>PERHATIAN:</strong> Untuk privasi, kamu menyarankan untuk menggunakan url saja ketimbang menggunakan email. Jika tidak punya satu url pun, kosongkan saja</p>
+                    </div>
+                    <br/>
+                    <div class="ui-state-highlight ui-corner-all" style="padding: 0 .7em;">
+                        <p><span class="ui-icon ui-icon-info" style="float: left; margin-right: .3em;"></span>
+ <strong>Informasi:</strong> Karakter dalam pesan maksimal 100 karakter</p>
+                    </div>
+                    <p>Untuk mengirim pesan, ketik enter atau klik Go</p>
+                </div>
+                 <h3>Beberapa fitur yang ada</h3>
+
+                <div>
+                    <ol>
+                        <li>Gak tahu apa yang dimaksud? Anda bisa rollover teks yang digarisbawahi dan lihat tooltipnya</li>
+                        <li>Merasa gak suka dengan toolbar yang di bawah? Gunakan fitur hide me</li>
+                        <li>Berbagai fitur yang tersembunyi bisa diakses melalui tombol di bagian bawah seperti gambar berikut:
+                            <div style="text-align:center">
+                                <img src="https://lh6.googleusercontent.com/-6s5miT5fSi8/Uy2mAln2tsI/AAAAAAAAB5c/WT7DgpgHCWA/w702-h107-no/Screenshot+%252822%2529.png" />
+                            </div>
+                        </li>
+                        <li>Bingung sudah sampai mana? Coba ditengok sudah berapa persen
+                            <table style="border:0">
+                                <tr>
+                                    <td>
+                                        <img src="https://lh4.googleusercontent.com/0kDm6GY3W0gxgP6n6vdRETOC7eY9nnKziVtKYh-83c8=w145-h207-p-no" width="80" height="122" />
+                                    </td>
+                                    <td>
+                                        <img src=" https://lh3.googleusercontent.com/9dZ4mD82NgPEJavD6NfLg0-GRLWo54vSRb0nYWYlco4=w277-h74-no" width="420" height="122" />
+                                    </td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div id="5">
+             <h2>What's New</h2>
+          <div>7.9 (pre-v8-v1)</div>
+          <ol>
+            <li>More reducing transparent widget</li>
+            <li>As part of pre-v8 update, we deleted this widget:<ul>
+              <li>Power Saving Mode (widget available via demo only)</li>
+              <li>(Upcoming) Geolocation</li>
+              </ul></li>
+          </ol>
+          <div>7.8.2 u1</div>
+          <ol>
+            <li>Reducing translucent widget</li>
+            <li>Fix bug in Action Overflow that can cause it stops working</li>
+          </ol>
+          <div>7.8.2</div>
+            <ol>
+              <li>Redesign footer</li>
+              <li>Remove 'Information Widget' because this widget is not important</li>
+              <li>Change 404 design</li>
+              <li>Remove image background and re-add background color changing widget</li>
+              <li>Improvement in Background Color Changing</li>
+              <li>Upgrade jQuery UI to 1.11.2</li>
+          </ol>
+            <div>7.8</div>
+            <ol>
+                <li>DARK THEME</li>
+                <li>Light elements changed to white element</li>
+                <li>Improves Ultra Energy Saving Mode</li>
+                <li>'Please wait' element when loading and leaving page. Thanks to <a href="https://androidgratiz.blogspot.com/2012/01/membuat-efek-loading-ketika-membuka.html">this page</a>
+
+                </li>
+                <li>Added action overflow button in bottom-right position</li>
+                <li>Fix the 'Information' widget</li>
+                <li>Faster loading: 3s in 7.8, 5s in 7.7, 8s in 7.6.3</li>
+            </ol>
+            <div>7.7</div>
+            <ol>
+                <li>Change the theme to dot-luv</li>
+                <li>Reduce all the elements to faster loading</li>
+                <li>Ultra Energy Saving Mode for Accessibility for people who doesn't want to colorful this blog</li>
+                <li>New 404 error design</li>
+                <li>Improve the bounce to top widget</li>
+                <li>Added 'scroll to top' button for easy use</li>
+                <li>Convert your Code widget via dialog</li>
+            </ol>
+            <div>7.6.3</div>
+            <ol>
+                <li>Introduce help for easier using</li>
+                <li>Remove the message in top bar (below the url bar) because it's have many bugs</li>
+                <li>jQuery update to 2.1</li>
+                <li>jQueryUI update to 1.10.4</li>
+                <li>Remove all elements from jQuery's CDN. It's slow down the blog loading</li>
+                <li>Decrase the loading time</li>
+                <li>Re-improve the Action Overflow</li>
+                <li>Fix the geolocation error: <code class="err">Cannot read property 'LatLng' of undefined</code></li>
+                <li>Fix the bug that can cause jQuery functional to fail</li>
+                <li>Change the 'Full screen' option - from hiding floating elements and widgets to only hiding floating elements</li>
+                <li>Added 'Bounce' effect when scrolling to top by pressing 'Scroll to top' button</li>
+            </ol>
+          <h2>Upcoming</h2>
+          <div>8.0 - <b>Cross-Platform Update</b></div>
+          <ol>
+            <li>Minimalist design</li>
+            <li>jQuery UI removed, changed with jQuery Mobile</li>
+            <li>Lightweight blog</li>
+            <li>Light theme</li>
+            <li>An Analog Clock with Information (PC Only)</li>
+            <li>Maybe<ol>
+              <li>Tooltip integeration</li>
+              <li>Help</li>
+            </ol></li>
+          </ol>
+          To see our upcoming design, take to here: <a href="https://testonly3.blogspot.com/?zx=9dc9120446450681" target="_blank">https://testonly3.blogspot.com/</a>
+        </div>
+    </div>
+    <div style="text-align:right"><small style="font-size:7pt;">Help+Tips v1.2 - 7.9</small>
+
+    </div>
+</div>
+
+<script>
+	  $(function () {
+      $(".accordion").accordion({
+          collapsible: true,
+          active: false,
+          heightStyle: "content"
+      });
+  });
+  $(function () {
+      $("button#convert").button({
+          icons: {
+              primary: "ui-icon-pencil"
+          }
+      });
+  });
+
+  $(function () {
+      $(".tabs").tabs().addClass("ui-tabs-vertical ui-helper-clearfix");
+  });
+
+  window.oncontextmenu = function () {
+      alert('Sangat diharamkan untuk klik kanan di tempat ini. Terima kasih');
+      return false
+  }
+
+  $('document').ready(function () {
+      $("body").toggleClass("grey");
+  });
+
+  window.onbeforeunload = function () {
+      $("body").toggleClass("grey");
+  }
+</script>

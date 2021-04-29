@@ -853,7 +853,7 @@ h4 {
         timeLeft -= 1;
         countdown.innerHTML = "Download will begin automatically in <span>" + timeLeft + "</span> seconds.";
 
-        if(timeLeft <= 1){
+        if(timeLeft <= 0){
           clearInterval(downloadTimer);
           pleaseWaitText.style.display = "block";
           let download_href = "https://apy.pw/marketjb"; //enter the downloadable file link URL here

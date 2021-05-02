@@ -1,137 +1,191 @@
 <style>
-    @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
-*{
-  margin: 0;
-  padding: 0;
-  outline: none;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  * {
+  margin:0px auto;
+  padding: 0px;
+text-align:center;
 }
-body{
-  height: 100vh;
-  background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
-  background-size: 400%;
+body {
+  background-color: #D4D9ED;
 }
-#error-page{
-  position: absolute;
-  top: 10%;
-  left: 15%;
-  right: 15%;
-  bottom: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #fff;
-  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+.cont_principal {
+position: absolute;  
+  width: 100%;
+  height: 100%;
+overflow: hidden;
 }
-#error-page .content{
-  max-width: 600px;
-  text-align: center;
+.cont_error {
+position: absolute;
+  width: 100%;
+  height: 300px;
+  top: 50%;
+  margin-top:-150px;
 }
-.content h2.header{
-  font-size: 18vw;
-  line-height: 1em;
-  position: relative;
+
+.cont_error > h1  {
+ font-family: 'Lato', sans-serif;  
+font-weight: 400;
+  font-size:150px;
+color:#fff;
+position: relative;
+left:-100%;
+transition: all 0.5s;
 }
-.content h2.header:after{
-  position: absolute;
-  content: attr(data-text);
-  top: 0;
-  left: 0;
-  right: 0;
-  background: -webkit-repeating-linear-gradient(-45deg, #71b7e6, #69a6ce, #b98acc, #ee8176, #b98acc, #69a6ce, #9b59b6);
-  background-size: 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 1px 1px 2px rgba(255,255,255,0.25);
-  animation: animate 10s ease-in-out infinite;
+
+
+.cont_error > p  {
+ font-family: 'Lato', sans-serif;  
+font-weight: 300;
+  font-size:24px;
+  letter-spacing: 5px;
+color:#9294AE;
+position: relative;
+left:100%;
+transition: all 0.5s;
+    transition-delay: 0.5s;
+-webkit-transition: all 0.5s;
+ -webkit-transition-delay: 0.5s;
 }
-@keyframes animate {
-  0%{
-    background-position: 0 0;
+
+.cont_aura_1 {
+  position:absolute;
+  width:300px;
+  height: 120%;
+top:25px;
+right: -340px;
+  background-color: #8A65DF;
+box-shadow: 0px 0px  60px  20px  rgba(137,100,222,0.5);
+-webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.cont_aura_2 {
+  position:absolute;
+  width:100%;
+  height: 300px;
+right:-10%;
+bottom:-301px;
+ background-color: #8B65E4;
+box-shadow: 0px 0px 60px 10px rgba(131, 95, 214, 0.5),0px 0px  20px  0px  rgba(0,0,0,0.1);
+  z-index:5;
+transition: all 0.5s;
+-webkit-transition: all 0.5s;
+}
+
+.cont_error_active > .cont_error > h1 {
+  left:0%;
+}
+.cont_error_active > .cont_error > p {
+  left:0%;
+}
+
+.cont_error_active > .cont_aura_2 {
+    animation-name: animation_error_2;
+    animation-duration: 4s;
+  animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+transform: rotate(-20deg);    
+}
+.cont_error_active > .cont_aura_1 {
+ transform: rotate(20deg);
+  right:-170px;
+    animation-name: animation_error_1;
+    animation-duration: 4s;
+  animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@-webkit-keyframes animation_error_1 {
+  from {
+    -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
   }
-  25%{
-    background-position: 100% 0;
-  }
-  50%{
-    background-position: 100% 100%;
-  }
-  75%{
-    background-position: 0% 100%;
-  }
-  100%{
-    background-position: 0% 0%;
+  to {  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
   }
 }
-.content h4{
-  font-size: 1.5em;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  color: #000;
-  font-size: 2em;
-  max-width: 600px;
-  position: relative;
+@-o-keyframes animation_error_1 {
+  from {
+    -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  }
+  to {  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+  }
+
 }
-.content h4:after{
-  position: absolute;
-  content: attr(data-text);
-  top: 0;
-  left: 0;
-  right: 0;
-  text-shadow: 1px 1px 2px rgba(255,255,255,0.4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+@-moz-keyframes animation_error_1 {
+  from {
+    -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  }
+  to {  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+  }
+
 }
-.content p{
-  font-size: 1.2em;
-  color: #0d0d0d;
+@keyframes animation_error_1 {
+  from {
+    -webkit-transform: rotate(20deg);
+  transform: rotate(20deg);
+  }
+  to {  -webkit-transform: rotate(25deg);
+  transform: rotate(25deg);
+  }
 }
-.content .btns{
-  margin: 25px 0;
-  display: inline-flex;
+
+
+
+
+@-webkit-keyframes animation_error_2 {
+  from { -webkit-transform: rotate(-15deg); 
+  transform: rotate(-15deg);
+  }
+  to { -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  }
 }
-.content .btns a{
-  display: inline-block;
-  margin: 0 10px;
-  text-decoration: none;
-  border: 2px solid #69a6ce;
-  color: #69a6ce;
-  font-weight: 500;
-  padding: 10px 25px;
-  border-radius: 25px;
-  text-transform: uppercase;
-  transition: all 0.3s ease;
+@-o-keyframes animation_error_2 {
+  from { -webkit-transform: rotate(-15deg); 
+  transform: rotate(-15deg);
+  }
+  to { -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  }
 }
-.content .btns a:hover{
-  background: #69a6ce;
-  color: #fff;
+}
+@-moz-keyframes animation_error_2 {
+  from { -webkit-transform: rotate(-15deg); 
+  transform: rotate(-15deg);
+  }
+  to { -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  }
+}
+@keyframes animation_error_2 {
+  from { -webkit-transform: rotate(-15deg); 
+  transform: rotate(-15deg);
+  }
+  to { -webkit-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  }
 }
 
 </style>
 
-<!DOCTYPE html>
-<!-- Created By CodingNepal -->
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <!-- Somehow I got an error, so I comment the title, just uncomment to show -->
-    <!-- <title>404 Error Page | CodingNepal</title> -->
-    <link rel="stylesheet" href="style.css">
-    <title>Selco </title>
-    <link rel="shortcut icon" href="https://i.ibb.co/8m8g0p8/logo.png" type="image/x-icon">
-  </head>
-  <body>
-    <div id="error-page">
-      <div class="content">
-        <h2 class="header" data-text="404">
-404</h2>
-<h4 data-text="Opps! Page not found">
-Opps! Page not found</h4>
-<p>
-Sorry, the page you're looking for doesn't exist. If you think something is broken, report a problem.</p>
-<div class="btns">
-        </div>
+<div class="cont_principal">
+<div class="cont_error">
+  
+<h1>Oops!!!</h1>  
+  <p>Website Ini Dalam Masa Pembangunan.</p>
+  </div>
+<div class="cont_aura_1"></div>
+<div class="cont_aura_2"></div>
 </div>
-</div>
-</body>
-</html>
+<script>
+  window.onload = function(){
+document.querySelector('.cont_principal').className= "cont_principal cont_error_active";  
+  
+}
+</script>

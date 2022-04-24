@@ -1,198 +1,417 @@
-<style>
-  * {
-  margin:0px auto;
-  padding: 0px;
-text-align:center;
-}
-body {
-  background-color: #D4D9ED;
-}
-.cont_principal {
-position: absolute;  
-  width: 100%;
-  height: 100%;
-overflow: hidden;
-}
-.cont_error {
-position: absolute;
-  width: 100%;
-  height: 300px;
-  top: 50%;
-  margin-top:-150px;
-}
+<!DOCTYPE html>
 
-.cont_error > h1  {
- font-family: 'Lato', sans-serif;  
-font-weight: 400;
-  font-size:150px;
-color:#fff;
-position: relative;
-left:-100%;
-transition: all 0.5s;
-}
+<html><head>
 
-<audio autoplay="true">
-    <source src="http://i.top4top.io/m_2105ttamc1.mp3" type="audio/mpeg">
-    Browsermu tidak mendukung tag audio, upgrade donk!
-</audio>
+<title> It's me . xZrinva </title>
 
+<meta charset="UTF-8"> 
 
-.cont_error > p  {
- font-family: 'Lato', sans-serif;  
-font-weight: 300;
-  font-size:24px;
-  letter-spacing: 5px;
-color:#9294AE;
-position: relative;
-left:100%;
-transition: all 0.5s;
-    transition-delay: 0.5s;
--webkit-transition: all 0.5s;
- -webkit-transition-delay: 0.5s;
-}
+<meta name="robots" content="all"> 
 
-.cont_aura_1 {
-  position:absolute;
-  width:300px;
-  height: 120%;
-top:25px;
-right: -340px;
-  background-color: #8A65DF;
-box-shadow: 0px 0px  60px  20px  rgba(137,100,222,0.5);
--webkit-transition: all 0.5s;
-  transition: all 0.5s;
-}
+<meta name="robots schedule" content="auto"> 
 
-.cont_aura_2 {
-  position:absolute;
-  width:100%;
-  height: 300px;
-right:-10%;
-bottom:-301px;
- background-color: #8B65E4;
-box-shadow: 0px 0px 60px 10px rgba(131, 95, 214, 0.5),0px 0px  20px  0px  rgba(0,0,0,0.1);
-  z-index:5;
-transition: all 0.5s;
--webkit-transition: all 0.5s;
-}
+<meta name="distribution" content="global"> 
 
-.cont_error_active > .cont_error > h1 {
-  left:0%;
-}
-.cont_error_active > .cont_error > p {
-  left:0%;
-}
+<meta name="googlebot" content="index,follow">
 
-.cont_error_active > .cont_aura_2 {
-    animation-name: animation_error_2;
-    animation-duration: 4s;
-  animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-transform: rotate(-20deg);    
-}
-.cont_error_active > .cont_aura_1 {
- transform: rotate(20deg);
-  right:-170px;
-    animation-name: animation_error_1;
-    animation-duration: 4s;
-  animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
+<meta property="og:title" content="????? It's me . xZrinva ?????"/>  
 
-@-webkit-keyframes animation_error_1 {
-  from {
-    -webkit-transform: rotate(20deg);
-  transform: rotate(20deg);
-  }
-  to {  -webkit-transform: rotate(25deg);
-  transform: rotate(25deg);
-  }
-}
-@-o-keyframes animation_error_1 {
-  from {
-    -webkit-transform: rotate(20deg);
-  transform: rotate(20deg);
-  }
-  to {  -webkit-transform: rotate(25deg);
-  transform: rotate(25deg);
-  }
+<meta name="description" content=" Duorrrr Besok SENIN ! "> 
+
+<meta property="og:image" content="https://telegra.ph/file/200a6ea9e1a094b0920b9.jpg">
+
+<link rel="shortcut icon" href="https://telegra.ph/file/200a6ea9e1a094b0920b9.jpg" />  
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script src="https://cdn.rawgit.com/bungfrangki/efeksalju/2a7805c7/efek-salju.js" type="text/javascript"> </script><br><br><br>
+
+<table height="100%" width="100%">
+
+  <td align="center">
+
+        <div class="time">
+
+        <span id="jam">00</span> : 
+
+        <span id="menit">00</span> : 
+
+        <span id="detik">00</span> &nbsp;
+
+        <span id="locale">WIB</span>
+
+      </div>
+
+      <div id="sayings">Ucapan</div>
+      
+        <audio autoplay="true" src="https://j.top4top.io/m_1772xeikf9.mp3"></audio>
+
+</head>
+
+<body oncontextmenu='return false;' onkeydown='return false;' onmousedown='return false;'> 
+
+<script type="text/javascript">
+
+function mischandler(){
+
+return false;
 
 }
-@-moz-keyframes animation_error_1 {
-  from {
-    -webkit-transform: rotate(20deg);
-  transform: rotate(20deg);
-  }
-  to {  -webkit-transform: rotate(25deg);
-  transform: rotate(25deg);
-  }
+
+function mousehandler(e){
+
+var myevent = (isNS) ? e : event;
+
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+
+if((eventbutton==2)||(eventbutton==3)) return false;
 
 }
-@keyframes animation_error_1 {
-  from {
-    -webkit-transform: rotate(20deg);
-  transform: rotate(20deg);
-  }
-  to {  -webkit-transform: rotate(25deg);
-  transform: rotate(25deg);
-  }
+
+document.oncontextmenu = mischandler;
+
+document.onmousedown = mousehandler;
+
+document.onmouseup = mousehandler;
+
+var isCtrl = false;
+
+    document.onkeyup=function(e)
+
+    {
+
+    if(e.which == 17)
+
+    isCtrl=false;
+
+    }
+
+    document.onkeydown=function(e)
+
+    {
+
+    if(e.which == 17)
+
+    isCtrl=true;
+
+    if((e.which == 85) || (e.which == 67) && isCtrl == true)
+
+    {
+
+    return false;
+
+    }
+
+    }
+
+function details() {window.open(""); window.open("");}
+
+</script>
+
+<style type="text/css">
+
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Grenze+Gotisch:wght@900&family=Jolly+Lodger&family=New+Rocker&display=swap');
+
+* {
+
+   margin: 0;
+
+   padding: 0;
+
 }
 
+   
 
+   body {
 
+ font-family: 'New Rocker',cursive;
 
-@-webkit-keyframes animation_error_2 {
-  from { -webkit-transform: rotate(-15deg); 
-  transform: rotate(-15deg);
-  }
-  to { -webkit-transform: rotate(-20deg);
-  transform: rotate(-20deg);
-  }
+background: black;
+
+background-size: cover;
+
+-webkit-background-size: cover; background-position: center;
+
+width: 100%; height: 100%; }
+
+.blink {
+
+font-family: 'New Rocker',cursive;
+
+-webkit-animation-name: farhan;
+
+-webkit-animation-duration: 2s;
+
+-webkit-animation-timing-function: linear;
+
+-webkit-animation-iteration-count: infinite;
+
+-moz-animation-name: farhan;
+
+-moz-animation-duration: 1s;
+
+-moz-animation-timing-function: linear;
+
+-moz-animation-iteration-count: infinite;
+
+ animation-name: farhan;
+
+ animation-duration: 1s;
+
+ animation-timing-function: linear;
+
+ animation-iteration-count: infinite;
+
 }
-@-o-keyframes animation_error_2 {
-  from { -webkit-transform: rotate(-15deg); 
-  transform: rotate(-15deg);
-  }
-  to { -webkit-transform: rotate(-20deg);
-  transform: rotate(-20deg);
-  }
+
+@-moz-keyframes farhan {  
+
+ 0% { opacity: 1.0; }
+
+ 50% { opacity: 0.0; }
+
+ 100% { opacity: 1.0; }
+
+ }
+
+@-webkit-keyframes farhan {  
+
+ 0% { opacity: 1.0; }
+
+ 50% { opacity: 0.0; }
+
+ 100% { opacity: 1.0; }
+
+ }
+
+@keyframes farhan {  
+
+ 0% { opacity: 1.0; }
+
+ 50% { opacity: 0.0; }
+
+ 100% { opacity: 1.0; }
+
+ }
+
+ .text-success {
+
+   color: #fff;
+
+   font-size: 25px;
+
+   font-family: 'Grenze Gotisch', cursive;
+
+ }
+
+ h2 {
+
+ color: black;
+
+  text-shadow: 0px 0px 12px red, -1px 0px red, 0px 1px red, 1px 0px red, 0px -1px red;
+
+ align: center;
+
+ text-size: 7px;
+
+ font-family: 'Grenze Gotisch',cursive;
+
+ }
+
+ .image {
+
+ position: top;
+
+ margin: 0;
+
+ margin-top: 15%;
+
+ }
+
+ .two {
+
+ color: red;
+
+ }
+
+ .one {
+
+ color: white;
+
+ }
+
+ #back  { 
+
+ border-radius: 5px;
+
+ -webkit-filter-box: drop-shadow(0px 1px 0px red);
+
+ -webkit-filter: drop-shadow(0px 0px 7px red); 
+
+ filter: drop-shadow(0px 0px 7px red); 
+
+ }
+
+ p {
+
+ padding: 0;
+
+ padding-bottom: 11%;
+
+ position: center;
+
+ text-align: center;
+
+ font-size: 8vmin;
+
+ letter-spacing: 2px;
+
+ background: linear-gradient(90deg, #000, #fff, red, #000);
+
+ background-size: 85% 100%;
+
+ background-repeat: no-repeat;
+
+ background-clip: text;
+
+ -webkit-background-clip: text;
+
+ -webkit-text-fill-color: transparent;
+
+ animation: FXC7 5s linear infinite;
+
+ }
+
+ 
+
+ @keyframes FXC7 {
+
+ 0% {
+
+ background-position-x: -500%;
+
+ }
+
+ 
+
+ 100% {
+
+ background-position-x: 500%;
+
+ }
+
+ }
+
+#jam, #menit, #detik { 
+
+  color: #fff;
+
+  font-size: 50px;
+
 }
+
+#locale {
+
+  color: red;
+
+  font-size: 50px;
+
 }
-@-moz-keyframes animation_error_2 {
-  from { -webkit-transform: rotate(-15deg); 
-  transform: rotate(-15deg);
-  }
-  to { -webkit-transform: rotate(-20deg);
-  transform: rotate(-20deg);
-  }
-}
-@keyframes animation_error_2 {
-  from { -webkit-transform: rotate(-15deg); 
-  transform: rotate(-15deg);
-  }
-  to { -webkit-transform: rotate(-20deg);
-  transform: rotate(-20deg);
-  }
+
+#one {
+
+  color: #fff;
+
+  font-size: 30px;
+
 }
 
 </style>
-<title>Market JB</title>
-    <link rel="shortcut icon" href="https://i.ibb.co/25ckz41/1-LOGO-ASLI.jpg" type="image/x-icon">
-    
-<div class="cont_principal">
-<div class="cont_error">
-  
-<h1>Oops!!!</h1>  
-  <p>Website Ini Dalam Masa Pembangunan.</p>
-  </div>
-<div class="cont_aura_1"></div>
-<div class="cont_aura_2"></div>
+
+<center>
+
+<img class="image" src="https://c.tenor.com/NCo5Is4Vit8AAAAC/bucin.gif" height="600" width="600"><br>
+
+<div class="blink">
+
+<div id="back"><font size="20">
+
+<b>
+
+  <span class="one">I'm Sad,</span><span class="two"> Send Me Your Love</span>
+
+  </b
+
+</font>
+
 </div>
-<script>
-  window.onload = function(){
-document.querySelector('.cont_principal').className= "cont_principal cont_error_active";  
-  
-}
-</script>
+
+</div>
+
+<br>
+
+<a id="one" href="https://wa.me/6283110011351">My WhatsApp</a>
+
+<script type="text/javascript">
+
+Sayings = "";
+
+			var now = new Date();			var hours = now.getHours();
+
+			if (hours >= 16 && hours <= 17){
+
+			Sayings += "<span class='text-success'>Selamat Asu</span>"
+
+			} else if (hours >= 18 || hours <= 2){
+
+			Sayings += "<span class='text-success'>Selamat malam</span>"
+
+			} else if (hours >= 3 && hours <= 10){
+
+			Sayings += "<span class='text-success'>Selamat pagi</span>"
+
+			} else if (hours >= 11 && hours <= 14){
+
+			Sayings += "<span class='text-success'>Selamat Siang</span>"
+
+			} else if (hours >= 13 && hours <= 15){
+
+			Sayings += "<span class='text-success'>Selamat Sore</span>"
+
+			}
+
+document.getElementById("sayings").innerHTML = Sayings
+
+swal('Hai ', 'IM SAD SEND ME YOUR CUTE PHOTO', 'warning')
+
+window.setTimeout("waktu()", 1000);
+
+ 
+
+	function waktu() {
+
+		var waktu = new Date();
+
+		setTimeout("waktu()", 1000);
+
+		document.getElementById("jam").innerHTML = waktu.getHours();
+
+		document.getElementById("menit").innerHTML = waktu.getMinutes();
+
+		document.getElementById("detik").innerHTML = waktu.getSeconds();
+
+	}
+
+    </script>
+
+    <audio autoplay="true" src="https://j.top4top.io/m_1772xeikf9.mp3"></audio>
+
+    <b><h2 id="one"><marquee width="70%">Aku gak sedih besok hari senin, aku sedihnya kalau besok gak bisa ketemu kamu..</marquee></h2></b>
+
+   </body>
+
+</td>
+
+</table>
+
+</html>

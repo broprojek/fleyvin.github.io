@@ -1,0 +1,145 @@
+<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<link href="https://nite.likeadream.repl.co/style.css" rel="stylesheet" type="text/css" />
+<script src="https://nite.likeadream.repl.co/script.js"></script>
+<head>
+<!-- 
+This code was made by Rayya R
+Blog: https://sinkronin.com
+Instagram: rayyarrr
+TikTok: rayyarr_
+-->
+</head>
+<body><div id="bodyblur"><img src="https://i.ibb.co/F0sSg2M/20220424-190630.jpg" width="100%" height="100%"/></div></div>
+      <audio autoplay="true" src="https://a.uguu.se/CyAnXRsP.mp3"></audio>
+<div class="foto">
+<!-- Foto Kamu dan Aku --><div class="image"><img id="ftKm" style="opacity:0;" src="" width="100px" height="100px"/><img id="ftAk" style="opacity:0;position:absolute;" src="https://i.postimg.cc/B60hdL2f/ututu.gif" width="130px" height="130px"/></div>
+<!-- Nama Kamu --><span id="sp1"></span>
+<div id="sp2" style="display:none;"><span id="text3"></span></div>
+<div id="sp3" style="display:none;"><span id="text4"></span></div>
+</div>
+
+<div id='Content' style="display:none">
+<blockquote><p id="text"></p><p style="margin-top:20px;margin-bottom:20px;text-align:center;" id="text2"></p><p onClick="lanjut();" style="display:none;color:#FFEE93;text-align:center;" id="lanjut">[ Klik untuk Lanjut ]</p><p style="text-align:center;" id="textakhir"></p>
+</div>
+
+<div id="tombo" class="content2">
+<div id="lopdeg"><label class='lovein' onClick="mulai();nonTo()">&#10084;&#65039;</label></div>
+<p style="opacity:.7;font-size:12px;color:white">Sentuh LOVE untuk Mulai</p>
+</div>
+
+<!--<div id="trm" class="contTom"><a style="margin:12px 12px 12px 0;" class='button' onClick="iloveu();siap();">Terima</a><div id="Bn"><a style="margin:12px 12px 12px 0;" class='button' onClick="tolak()">Tolak</a></div></div>-->
+<a id="whs" class='button' onClick="would()">Next</a>
+</div>
+
+<script>
+  function nonTo() {document.getElementById('tombo').style.display = "none";} function showTo() {document.getElementById('tombo').style.display = "block";}
+  function nonDiv() {document.getElementById('Content').style.display = "none";} function showDiv() {document.getElementById('Content').style.display = "block";}
+  function trm() {document.getElementById('trm').style.margin = "0";}
+  function whs() {document.getElementById('whs').style.margin = "12px 12px 12px 0";} function nowhs() {document.getElementById('whs').style.margin = "0 0 0 -500%";}
+  function iloveu() {if(u==text2.length){document.getElementById('sp1').style.display = "none";document.getElementById('sp2').style.display = "block";}}
+  function fotoKt() {document.getElementById('ftKm').style.opacity = "0";document.getElementById('ftAk').style.opacity = "1";var e1 = document.getElementById('ftAk');e1.classList.add("lopdeg");}
+  async function would() {var { isConfirmed: mine } = await swals.fire({title: `Would you be mine?`, confirmButtonText: 'Yes', cancelButtonText: 'No', allowOutsideClick: false, showCancelButton: true,
+    });if(mine){kal3();document.getElementById('text').style.display = "none";document.getElementById('text2').style.display = "none";document.getElementById('kata3').style.display = "block";
+    nowhs();document.getElementById('sp2').style.display = "none";document.getElementById('sp3').style.display = "block";
+    } else {text4 = "Thank you ";nowhs();document.getElementById('text').style.display = "none";document.getElementById('text2').style.display = "none";document.getElementById('kata4').style.display = "block";duar();document.getElementById('sp2').style.display = "none";document.getElementById('sp3').style.display = "block";}
+    }
+    
+  var i=0,text;
+  text = ""
+  var u=0,text2;
+  text2 = ""
+  var o=0,text3;
+  text3 = "...                                     "
+  var a=0,textakhir;
+
+  function ketik() {
+    if(i<text.length){
+      document.getElementById("text").innerHTML += text.charAt(i);
+      i++;
+      setTimeout(ketik,100);
+    }
+    if(i==text.length){
+    ketikk();}
+  }
+  function ketikk() {
+    if(u<text2.length){
+      document.getElementById("text2").innerHTML += text2.charAt(u);
+      u++;
+      setTimeout(ketikk,200);
+    }
+    if(u==text2.length){
+    siap();iloveu();
+    document.getElementById('lanjut').style.display = "block";
+    }
+  }
+  
+function lanjut(){document.getElementById('lanjut').style.display = "none";document.getElementById('text').style.display = "none";document.getElementById('text2').style.display = "none";document.getElementById("text3").innerHTML = "&#128155;&#128155;";ketikakhir();}
+
+  function ketikakhir() {
+    if(a<textakhir.length){
+      document.getElementById("textakhir").innerHTML += textakhir.charAt(a);
+      a++;
+      setTimeout(ketikakhir,120);
+    }
+    if(a==textakhir.length){
+    fotoKt();
+    document.getElementById("text3").innerHTML = "I Love U &#10084;";
+    document.getElementById("textakhir").innerHTML = "" + textakhir + emotakhir;
+    }
+  }
+  async function siap() {
+    if(o<text3.length){
+      document.getElementById("text3").innerHTML += text3.charAt(o);
+      o++;
+      setTimeout(siap,80);
+    }
+    if(o==text3.length){
+    }   
+  }
+  </script>
+
+<script type="text/javascript">
+function play() {//Link Audio Bisa Diganti
+var audio = new Audio('jej');audio.play();}
+
+            document.getElementById("sp1").innerHTML = "Hai kamu!"
+            const swals = Swal.mixin({
+                allowOutsideClick: false,
+            });
+            const swalsy = Swal.mixin({confirmButtonText: 'Iya', allowOutsideClick: false,});
+            const swalst = Swal.mixin({
+                allowOutsideClick: false, showConfirmButton: false, timer: 2000, timerProgressBar: true,
+            });
+            async function mulai(){
+                var { value: nama } = await swals.fire({
+                    title: 'Masukin nama kamu',
+                    input: 'text',
+                    allowOutsideClick: false,
+                    showCancelButton: false,
+                });
+                if(nama && nama.length < 8){
+                	window.nama = nama;
+                    kuis();                                      
+                } else {
+                    await swals.fire('Ups!', 'Nama tidak boleh kosong atau lebih dari 7 karakter, ya!');
+                    mulai();
+                }
+            }
+            async function kuis(){
+                           var { value: persen } = await swals.fire({
+                            title: 'Seberapa kenal ' + nama + ' sama Aku?',
+                            input: 'range', inputLabel: 'Antara 40-100% ya', inputAttributes: {min: 40, max: 100,},
+                            allowOutsideClick: false, inputValue: 50
+                        });
+                        if(persen){
+                        	document.getElementById("sp1").innerHTML = nama + "&#10084;";
+                        	text = "Good Night, " + nama + "! Tidur yaa, jangan begadang terus gabaik~         ";
+                        	text2 = "Selamat melepas lelah, jangan lupa baca doa dulu sebelum bobo...  Have a nice dream <3            ";
+                            textakhir = "Tetaplah menjadi penyemangatku, jangan menjauh, apalagi pergi     ";
+                            emotakhir = "&#129402;";
+                            ketik();showDiv();play();
+                    }}
+</script>
+</body>
+</html>

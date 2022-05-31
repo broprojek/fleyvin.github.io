@@ -1,10 +1,18 @@
 {
     "status": 200,
-    "alldata": "6283161562525 6285230122985",
+    "alldata": "6283161562525 6283110011351 6285230122985",
     "user": {
-        "sentod6283110011351": "expired 15 Juni 2022",
-        "character": "Shiki Magata",
-        "anime": "Subete ga F ni Naru",
-        "episode": "Episode 7"
+        "sd6283110011351":  {
+                                            "nomor": "expired 15 Juni 2022",
+                                            "paket": "Shiki Magata",
+                                            "awal": "Subete ga F ni Naru",
+                                            "akir": "Episode 7"
+    },
+            "sd6283110011351":  {
+                                            "nomor": "expired 15 Juni 2022",
+                                            "paket": "Shiki Magata",
+                                            "awal": "Subete ga F ni Naru",
+                                            "akir": "Episode 7"
+    }
     }
 }

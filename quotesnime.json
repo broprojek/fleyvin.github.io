@@ -1,18 +1,18 @@
 {
     "status": 200,
-    "alldata": "6283161562525 6283110011351 ",
+    "alldata": "6283161562525 6283110011351",
     "user": {
-        "sd6283110011351":  {
-                                            "nomor": "expired 15 Juni 2022",
-                                            "paket": "Shiki Magata",
-                                            "awal": "Subete ga F ni Naru",
-                                            "akir": "Episode 7"
+        "s6283110011351":  {
+                                            "nomor": "6283110011351",
+                                            "paket": "Paket 3 | 30 HARI",
+                                            "awal": "30 may 2022",
+                                            "akir": "30 juni 2022"
     },
-            "sd6283110011351":  {
-                                            "nomor": "expired 15 Juni 2022",
-                                            "paket": "Shiki Magata",
-                                            "awal": "Subete ga F ni Naru",
-                                            "akir": "Episode 7"
+            "s629630883352":  {
+                                            "nomor": "6289630883352",
+                                            "paket": "PAKET 2 | 15 HARI",
+                                            "awal": "30 May 2022",
+                                            "akir": "14 juni 2022"
     }
     }
 }
